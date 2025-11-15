@@ -58,10 +58,75 @@ html{overflow-x: hidden;}
  }
 
 /* HERO */
-.slider-wrap{position:relative}
-.slider-img{width:100%;height:100vh;object-fit:cover}
+.slider-wrap{position:relative; height: 100vh;}
+.row.g-0.hero-subh {
+   height: 100vh;
+}
+
+
+/* Right box equal height */
+
+.carousel-item,
+.carousel-item img {
+  height: 100%;
+}
+.slider-img{width:100%;
+  height:100%;
+  object-fit:cover}
+
+#mainSlider .carousel-control-prev,
+#mainSlider .carousel-control-next {
+  position: absolute;
+  top: 50%;                    /* Vertical center */
+  transform: translateY(-50%);
+  z-index: 10;                 /* Image ke upar show honge */
+  width: 55px;
+  height: 55px;
+  opacity: 1 !important;
+}
+
+/* Left arrow */
+#mainSlider .carousel-control-prev {
+  left: 20px;                  /* left side space */
+}
+
+/* Right arrow */
+#mainSlider .carousel-control-next {
+  right: 20px;                 /* right side space */
+}
+
+/* Arrow icons style */
+#mainSlider .carousel-control-prev-icon,
+#mainSlider .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.45);  /* circle bg */
+  padding: 18px;
+  border-radius: 50%;
+  background-size: 18px;
+}
+  
 @media (max-width: 1199.98px){.slider-img{height:80vh}}
-@media (max-width: 991.98px){.slider-img{height:60vh}}
+@media (max-width: 991.98px){.slider-img{height:60vh}.slider-wrap {
+    height: auto;
+  }
+  .slider-img {
+    height: auto;
+  }.right-box {
+  background: var(--nims-red);
+  color: #fff;
+  padding: 28px 22px;
+  min-height: 100vh; 
+  display: flex;
+  align-items: center;
+}
+.right-box {
+    min-height: unset;
+    padding: 20px;
+  }
+}
+
+.npf_wgts iframe {
+  width: 100% !important;
+}
 @media (max-width: 575.98px){.slider-img{height:48vh}}
 
 .slide-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;padding:0 1rem}
@@ -71,7 +136,15 @@ html{overflow-x: hidden;}
 .overlay-dot{width:8px;height:8px;background:#ff6b6b;border-radius:50%;display:inline-block;margin-top:.5rem}
 
 /* RIGHT PANEL */
-.right-box{background:var(--nims-red);color:#fff;padding:28px 22px;min-height:100vh}
+.right-box{background: var(--nims-red);
+  color: #fff;
+  padding: 28px 22px;
+  height: 84%;         /* 🔥 Equal height — FIX */
+  display: flex;
+  align-items: center;}
+
+
+  
 @media (max-width: 991.98px){.right-box{min-height:unset}}
 .npf_wgts iframe{width:100% !important}
 
@@ -591,7 +664,7 @@ html{overflow-x: hidden;}
  }
 
  .program-section {
-   padding: 60px 0;
+   padding: 76px 0;
    text-align: center;
  }
 

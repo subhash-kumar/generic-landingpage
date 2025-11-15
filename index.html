@@ -59,9 +59,9 @@
     </nav>
 
     <!-- Hero Carousel Section -->
-    <section class="container-fluid p-0">
+ <section class="container-fluid p-0">
 <div class="container-fluid p-0">
-    <div class="row g-0">
+    <div class="row g-0 hero-subh">
       <!-- LEFT: Slider -->
       <div class="col-lg-8 slider-wrap order-2 order-lg-1">
         <div id="mainSlider" class="carousel slide" data-bs-ride="carousel" aria-label="Campus images slider">
@@ -96,9 +96,9 @@
 
       <!-- RIGHT: Register panel -->
       <div class="col-lg-4 right-box d-flex align-items-start align-items-lg-center order-1 order-lg-2">
-        <div class="w-100">
-          <div class="text-center mb-3">
-            <div class="fw-bold">Admissions Open for UG &amp; PG Programmes 2025–26</div>
+        <div class="w-100 mt-5">
+          <div class="text-center mb-3 mt-5 pt-5">
+            <div class="fw-bold"><h4>Admissions Open for UG &amp; PG Programmes 2025–26</h4></div>
             <div class="opacity-75 small">at NIMS University – Enter your details</div>
           </div>
 
@@ -124,7 +124,7 @@
     </section>
 
 
-    <section class="py-5">
+    <section class="py-0">
         <div class="container">
             <div class="row mb-4">
                 <div class="col-12 col-md-12" id="ranking">
@@ -194,7 +194,7 @@
 
     <!-- accreditation section -->
 
-    <section class="py-2 mb-5">
+    <section class="py-5 mb-0">
         <div class="container">
             <h3 class="mb-4 lead-head">Accreditation & Affiliation</h3>
 
@@ -359,7 +359,7 @@
 
       <!-- Video -->
       <div class="col-lg-6 d-flex align-items-end">
-        <div class="nims-video-wrapper position-relative w-100 shadow rounded-3 overflow-hidden border">
+        <div class="nims-video-wrapper01 position-relative w-100 shadow rounded-3 overflow-hidden border">
           <div class="ratio ratio-16x9">
             <iframe
               src="https://www.youtube.com/embed/xiERlpl_jcQ"
@@ -368,9 +368,9 @@
               allowfullscreen>
             </iframe>
           </div>
-          <div class="nims-video-caption">
+          <!-- <div class="nims-video-caption">
             Placement Success Stories | Management Students Placed at Bajaj Allianz | Nims University
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -1105,13 +1105,23 @@
 }
 
 /* ===== Video overlap ===== */
-.nims-video-wrapper {
+.nims-video-wrapper01 {
   position: relative;
-  top: -90px !important;
+  top: 0px !important;
   z-index: 5;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: none;
+}
+
+
+.nims-video-wrapper {
+  position: relative;
+  top: -75px !important;
+  z-index: 5;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(155, 155, 155, 0.2);
 }
 
 /* ===== Bottom Info Boxes ===== */
@@ -1384,7 +1394,7 @@
                 </div>
 
                 <div class="col-6 col-md-2">
-                    <div class="stat-item" data-number="5500+">
+                    <div class="stat-item" data-number="2000+">
                         <p>Faculty (National & International)</p>
                     </div>
                 </div>
@@ -1396,7 +1406,7 @@
                 </div>
 
                 <div class="col-6 col-md-2">
-                    <div class="stat-item" data-number="5000+">
+                    <div class="stat-item" data-number="1000+">
                         <p>International Students</p>
                     </div>
                 </div>
@@ -1558,7 +1568,7 @@
                 <div class="col-6 col-md-4 col-lg-2 feature">
                     <img src="images/hostel-life/AC and Non AC room options.png" alt="AC and Non AC room options"
                         loading="lazy" decoding="async" />
-                    <p>AC &amp; Non-AC Rooms</p>
+                    <p>Multi-Split Type Air Conditioners</p>
                 </div>
                 <div class="col-6 col-md-4 col-lg-2 feature">
                     <img src="images/hostel-life/Wi-Fi Internet Service by Jio.png" alt="Wi-Fi Internet Service"
@@ -1678,7 +1688,7 @@
 
     <section class="leadership-section">
         <div class="container leadership-section">
-            <div class="row g-4 align-items-start">
+            <div class="row g-4 align-items-end">
                 <!-- Left Content -->
                 <div class="col-lg-7">
                     <h3>Inspiring Leadership, Global Recognition</h3>
